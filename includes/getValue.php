@@ -1,4 +1,8 @@
 <?php
+if(!defined('GXB_TRMCO_URL')){
+  define('GXB_TRMCO_URL',plugins_url('/',GXB_TRMCO_FILE));
+}
+
 function trm_col_gxb_getArrayTRM(){
 $curl = curl_init();
 
@@ -32,7 +36,7 @@ function trm_col_gxb_getBasic(){
     }
   }
   if($array[$index-1]['trm']<$array[$index]['trm']){$icon="up";}else{$icon="down";}
-  $salida= "<span id='trm_col_gxb_trm'><img src='./includes/".$icon.".png' alt='".$icon."' id='trm_col_gxb_trm_basicIcon'>$".$array[$index]['trm']."</span>";
+  $salida= "<span id='trm_col_gxb_trm' style='display: flex;'><img src='".GXB_TRMCO_URL."includes/".$icon.".png' alt='".$icon."' id='trm_col_gxb_trm_basicIcon' style='width: 17px; height:auto;' />$".$array[$index]['trm']."</span>";
   return $salida;
 }
 

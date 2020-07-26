@@ -26,7 +26,8 @@ class trm_col_gxb_Widget extends WP_Widget {
 		echo $args['before_title'] . $title . $args['after_title'];
 		//output
 		include 'getValue.php';
-		$trm=trm_col_gxb_getAll();
+		//$trm=trm_col_gxb_getAll();
+		$trm = trm_col_gxb_getBasic();
 		echo __( $trm, 'trm_col_gxb' );
 		echo $args['after_widget'];
 	}

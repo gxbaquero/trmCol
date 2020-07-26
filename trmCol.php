@@ -13,7 +13,7 @@
  * Description:       Trae la TRM desde el Banco de la República de Colombia y la muestra como widget.
  * Version:           0.0.5
  * Requires at least: 5.2
- * Requires PHP:      7.2
+ * Requires PHP:      5.6
  * Author:            @gxbaquero
  * Author URI:        https://gxbaquero.github.io/
  * Text Domain:       trm_col_gxb
