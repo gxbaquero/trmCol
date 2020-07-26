@@ -21,8 +21,6 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-//include 'includes/getValue.php';
-//getAll();
 if(!defined('ABSPATH')){
   exit;
 }
@@ -38,7 +36,6 @@ if (!defined ('GXB_TRMCO_DIR')){
   define('GXB_TRMCO_DIR',plugin_dir_path(GXB_TRMCO_FILE));
 }
 //loadScripts
-
 require_once GXB_TRMCO_DIR.'includes/loadIni.php';
 require_once GXB_TRMCO_DIR.'includes/trmCol-class.php';
 
